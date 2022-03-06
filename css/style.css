@@ -1,0 +1,660 @@
+/* Start My Frame Work */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-transform: capitalize;
+    font-family: arial;
+    outline: none;
+    text-decoration: none !important
+}
+
+:root {
+
+    --color1: #08526d;
+    --color2: #ec1c23;
+    --color3: #fff;
+    --trans: .4s
+}
+
+.navbar-light .navbar-toggler{box-shadow: none}
+
+.line-center::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: var(--color2);
+    margin: auto
+}
+
+.carousel-indicators [data-bs-target] {
+    opacity: 1;
+    background-color: #ffffff7d
+}
+
+.carousel-indicators .active {
+    background-color: var(--color2)
+}
+
+.fa-arrow-up {
+    position: fixed;
+    bottom: 80px;
+    right: 5px;
+    padding: 15px;
+    background-color: var(--color2);
+    cursor: pointer;
+    border-radius: 15px;
+    color: #fff;
+    display: none;
+    z-index: 9999
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+::-webkit-scrollbar {
+    width: 8px
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #ec1c23a6;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--color2);
+
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f6f6f6;
+
+}
+
+/* End My Frame Work */
+
+/* Strat Header */
+
+.upper-bar {
+
+    background-color: var(--color1);
+    color: var(--color3);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between
+}
+
+.upper-bar span {
+    color: #bfc6c9
+}
+
+.upper-bar .row > div span:last-child {
+    display: inline-block;
+    border: 1px solid var(--color2);
+    padding: 2px 10px;
+    margin-left: 20px
+}
+
+nav a span {
+    font-size: 30px
+}
+
+nav span:first-child {
+    color: var(--color1);
+    font-weight: bold
+}
+
+nav span:last-child {
+    color: var(--color2)
+}
+
+nav .nav-link {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-left: 10px;
+    color: var(--color1) !important;
+    font-weight: bold;
+    transition: var(--trans); display: block
+}
+
+nav .nav-link.active {
+    color: var(--color2) !important
+}
+
+nav .nav-link:hover{color: var(--color2) !important; transform: translateX(6px)} 
+/* End Header*/
+
+/* Strat slider*/
+.slider {
+    background-color: #ddd
+}
+
+.slider .carousel-inner {
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: center
+}
+
+.slider .carousel-inner h1 {
+    position: absolute;
+    color: var(--color3);
+    z-index: 3;
+    font-size: 50px;
+    width: 800px;
+    margin-left: 30px
+}
+
+.slider .carousel-inner h1 span {
+    background-color: var(--color2);
+    color: var(--color3);
+    display: inline-block;
+    padding: 2px 10px
+}
+
+.slider .carousel-inner .overlay {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: 2
+}
+
+.slider .carousel-item {
+    background-size: cover
+}
+
+.slider .carousel-1 {
+    background-image: url(../images/slider01.jpg)
+}
+
+.slider .carousel-2 {
+    background-image: url(../images/slider02.jpg)
+}
+
+.slider .carousel-3 {
+    background-image: url(../images/slider03.jpg)
+}
+
+/* End slider*/
+
+/* Strat features*/
+.features {
+    padding: 50px 0
+}
+
+.features h2 {
+    margin-bottom: 50px
+}
+
+.features i {
+    background-color: var(--color2);
+    color: var(--color3);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 10px
+}
+
+.features h3 {
+    color: var(--color1)
+}
+
+.features p {
+    color: #989898
+}
+
+/* End features */
+
+/* Strat overview */
+.overview {
+    padding: 100px 0;
+    background-color: #f0f5f7
+}
+
+.overview h2 {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 30px
+}
+
+.overview p {
+    line-height: 2;
+    font-size: 20px;
+    width: 80%;
+    margin: auto;
+    margin: 0 auto 15px;
+    color: #6a6a6a
+}
+
+.overview h4 {
+    letter-spacing: 2px;
+    font-weight: normal;
+    color: #8b8a8a;
+    margin-bottom: 30px
+}
+
+.overview button {
+    background-color: var(--color2);
+    color: var(--color3);
+    padding: 10px 40px;
+    border: 1px solid var(--color2);
+    font-weight: bold;
+    font-size: 20px
+}
+
+/* End overview */
+
+/* Strat our-work */
+.our-work {
+    padding: 80px 0
+}
+
+.our-work h2 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 30px
+}
+
+.our-work p {
+    line-height: 1.6;
+    font-size: 20px;
+    width: 80%;
+    margin: auto;
+    margin: 0 auto 15px;
+    color: #6a6a6a
+}
+
+.our-work ul{
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden
+}
+
+.our-work ul li {
+    color: var(--color1);
+    border: 2px solid var(--color1);
+    padding: 5px 20px;
+    margin: 5px;
+    transition: var(--trans);
+    cursor: pointer
+}
+
+.our-work ul li.active,
+.our-work ul li:hover {
+
+    background-color: var(--color2);
+    color: var(--color3);
+    border-color: var(--color2)
+}
+
+.our-work .shuffle-box {
+
+    margin-top: 30px
+}
+
+.our-work .shuffle-box .row {
+    margin: 0
+}
+
+.our-work .shuffle-box .col-md {
+    padding: 0;
+    transition: 1s
+}
+
+.our-work .shuffle-box > div img {
+    width: 100%
+}
+
+/* End our-work */
+
+/* Strat posts */
+
+.posts .card {
+    margin-bottom: 10px
+}
+
+.posts .card .card-title {
+
+    font-size: 20px;
+    line-height: 1.4;
+    color: var(--color1)
+}
+
+.posts .card .card-text {
+    color: #787878
+}
+
+.posts .card .card-body a {
+    color: var(--color2);
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer
+}
+
+/* End posts */
+
+/* Strat testimonials */
+.testimonials {
+    position: relative;
+    background-size: cover;
+    background-image: url(../images/testimonial.jpg)
+}
+
+.testimonials .overlay {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: 2
+}
+
+.testimonials .carousel-inner {
+    position: relative;
+    z-index: 3
+}
+
+.container-fluid button {
+    z-index: 3
+}
+
+.testimonials .carousel-caption {
+    top: 50%;
+    margin-top: -158px
+}
+
+.testimonials .carousel-caption img {
+    margin-bottom: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    padding: 1px
+}
+
+.testimonials .carousel-caption h3 {
+    margin-bottom: 5px
+}
+
+.testimonials .carousel-caption h3 + span {
+    font-size: 18px;
+    display: inline-block;
+    margin-bottom: 20px
+}
+
+/* End testimonials */
+
+/* Strat price */
+.price {
+    padding: 80px 0 80px;
+    background-color: #f7f7f7
+}
+
+.price .card {
+    margin-bottom: 10px;
+    margin-top: 30px
+}
+
+.price .corporate {
+    position: relative;
+    top: -20px
+}
+
+.price .card .card-title {
+
+    font-size: 25px;
+    line-height: 1.4;
+    color: var(--color1);
+    margin-top: 30px
+}
+
+.price .card .card-text {
+    color: #787878;
+    margin: 30px 0;
+    background-color: #f7f7f7;
+    padding: 10px;
+    font-size: 30px 0 10px;
+    font-weight: bold;
+    margin-bottom: 5px
+}
+
+
+
+.price .corporate .card-text {
+    background-color: var(--color2);
+    color: var(--color3)
+}
+
+.price .card .card-text span {
+    font-size: 14px;
+    text-transform: uppercase
+}
+
+
+.price .card .card-body {
+    padding: 0
+}
+
+.price ul li {
+    border: none
+}
+
+.price .card .card-body a {
+    background-color: var(--color2);
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-block;
+    color: var(--color3);
+    padding: 3px 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom: 10px
+}
+
+.price .corporate a {
+    background: #08526d !important
+}
+
+/* End price */
+
+/* Start Why Choose Us */
+
+.choose-us .info {
+    padding: 0
+}
+
+.choose-us .info:last-child {
+    background-color: var(--color1);
+    color: var(--color3);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.choose-us img {
+
+    max-width: 100%
+}
+
+.choose-us h2 {
+    margin: 40px
+}
+
+.choose-us p {
+    margin: 40px;
+    line-height: 2
+}
+
+.choose-us .info a {
+    display: inline-block;
+    margin: 0 0 0 40px;
+    padding: 3px 30px;
+    background-color: var(--color2);
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer
+}
+
+/* End Why Choose Us */
+
+/* Strat Statistics */
+.stats {
+    padding: 100px 0;
+    color: var(--color1)
+}
+
+.stats span {
+    display: block;
+    font-size: 50px;
+    font-weight: bold
+}
+
+.stats p {
+    color: var(--color2);
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0
+}
+
+/* End Statistics */
+
+/* Start contact-us */
+
+.contact-us {
+    padding: 80px 0;
+    background-color: var(--color2);
+    color: var(--color3);
+    font-size: 22px
+}
+
+.contact-us P {margin: 0}
+
+.contact-us a {
+    color: var(--color3);
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 4px 15px  8px;
+    border: 2px solid var(--color3);
+}
+/* End contact-us */
+
+/* Start Footer */
+footer{padding-top: 100px}
+
+footer .site-info h2{font-size: 40px}
+
+footer .site-info span:first-of-type {
+    color: var(--color1);
+    font-weight: bold
+}
+
+footer .site-info span:last-of-type {
+    color: var(--color2)
+}
+
+footer .site-info p{
+    line-height: 1.7;
+    color: #727272
+}
+
+footer .site-info a{
+    color: var(--color1)
+}
+
+footer .site-info a::before{
+    
+    content: "\f138";
+    display: inline-block;
+    font-family: "fontawesome";
+    margin-right: 5px;
+    font-size: 18px
+}
+
+footer .helpful-links h2{
+    font-size: 22px;
+    color: var(--color1);
+    text-align: center
+}
+
+footer .helpful-links ul li{line-height: 2.3}
+
+footer .helpful-links ul li::before{
+    
+      
+    content: "\f054";
+    display: inline-block;
+    font-family: "fontawesome";
+    margin-right: 5px;
+    font-size: 18px;
+    color: var(--color1);
+    font-size: 12px;
+    position: relative;
+    top: -2px
+}
+
+footer .contect h2{
+    font-size: 22px;
+    color: var(--color1);
+    text-align: center
+}
+
+footer .contect ul {margin: 0}
+
+footer .contect ul li{margin-bottom: 10px}
+
+.copyright{border-top: 1px solid #c0c0c0; padding-top: 30px}
+
+.copyright ul li{
+    display: inline-block;
+    margin-left: 20px
+}
+
+.copyright ul li a{color: #777}
+/* End Footer */
+
+@media(max-width:576px){
+    
+    .upper-bar{flex-direction: column; align-items: center}
+    
+    .upper-bar > div:first-child{margin-bottom: 15px}
+}
+
+@media(max-width:768px){
+    
+    .slider .carousel-inner h1{
+        font-size: 30px;
+        max-width: 100%;
+        margin-left:auto;
+        text-align: center
+    }
+    
+    .overview h2{font-size: 30px}
+    
+    p{font-size: 15px !important}
+    
+    .price .corporate{top: 0}
+    
+    .contact-us P {margin-bottom: 20px}
+    
+    .copyright ul{margin-top: 20px}
+    
+    .testimonials .carousel-caption p{font-size: 10px !important}
+    
+}
