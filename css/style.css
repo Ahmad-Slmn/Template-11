@@ -53,6 +53,9 @@
     z-index: 9999
 }
 
+img{object-fit: cover}
+
+
 html {
     scroll-behavior: smooth
 }
@@ -503,7 +506,11 @@ nav .nav-link:hover {
 }
 
 .choose-us h2 {
-    margin: 40px
+    margin: 40px;
+    position: relative;
+    top: 31px;
+    border-bottom: 2px solid #fff;
+    width: fit-content;
 }
 
 .choose-us p {
