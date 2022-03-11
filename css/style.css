@@ -18,7 +18,9 @@
     --trans: .4s
 }
 
-.navbar-light .navbar-toggler{box-shadow: none}
+.navbar-light .navbar-toggler {
+    box-shadow: none
+}
 
 .line-center::after {
     content: "";
@@ -118,14 +120,19 @@ nav .nav-link {
     margin-left: 10px;
     color: var(--color1) !important;
     font-weight: bold;
-    transition: var(--trans); display: block
+    transition: var(--trans);
+    display: block
 }
 
 nav .nav-link.active {
     color: var(--color2) !important
 }
 
-nav .nav-link:hover{color: var(--color2) !important; transform: translateX(6px)} 
+nav .nav-link:hover {
+    color: var(--color2) !important;
+    transform: translateX(6px)
+}
+
 /* End Header*/
 
 /* Strat slider*/
@@ -273,7 +280,7 @@ nav .nav-link:hover{color: var(--color2) !important; transform: translateX(6px)}
     color: #6a6a6a
 }
 
-.our-work ul{
+.our-work ul {
     justify-content: center;
     align-items: center;
     margin: 0;
@@ -304,7 +311,9 @@ nav .nav-link:hover{color: var(--color2) !important; transform: translateX(6px)}
 }
 
 .our-work .shuffle-box .row {
-    margin: 0
+    margin: 0;
+    padding: 0 10px
+    
 }
 
 .our-work .shuffle-box .col-md {
@@ -313,7 +322,9 @@ nav .nav-link:hover{color: var(--color2) !important; transform: translateX(6px)}
 }
 
 .our-work .shuffle-box > div img {
-    width: 100%
+    width: 100%;
+    padding-bottom: 5px;
+    padding-right:5px
 }
 
 /* End our-work */
@@ -487,7 +498,8 @@ nav .nav-link:hover{color: var(--color2) !important; transform: translateX(6px)}
 
 .choose-us img {
 
-    max-width: 100%
+    width: 100%;
+    height: 100%
 }
 
 .choose-us h2 {
@@ -526,15 +538,12 @@ nav .nav-link:hover{color: var(--color2) !important; transform: translateX(6px)}
 
 .stats p {
     color: var(--color2);
-    font-size: 20px;
     font-weight: bold;
     margin: 0
 }
-
 /* End Statistics */
 
 /* Start contact-us */
-
 .contact-us {
     padding: 80px 0;
     background-color: var(--color2);
@@ -542,7 +551,9 @@ nav .nav-link:hover{color: var(--color2) !important; transform: translateX(6px)}
     font-size: 22px
 }
 
-.contact-us P {margin: 0}
+.contact-us P {
+    margin: 0
+}
 
 .contact-us a {
     color: var(--color3);
@@ -550,15 +561,20 @@ nav .nav-link:hover{color: var(--color2) !important; transform: translateX(6px)}
     cursor: pointer;
     font-weight: bold;
     text-transform: uppercase;
-    padding: 4px 15px  8px;
+    padding: 4px 15px 8px;
     border: 2px solid var(--color3);
 }
+
 /* End contact-us */
 
 /* Start Footer */
-footer{padding-top: 100px}
+footer {
+    padding-top: 100px
+}
 
-footer .site-info h2{font-size: 40px}
+footer .site-info h2 {
+    font-size: 40px
+}
 
 footer .site-info span:first-of-type {
     color: var(--color1);
@@ -569,17 +585,17 @@ footer .site-info span:last-of-type {
     color: var(--color2)
 }
 
-footer .site-info p{
+footer .site-info p {
     line-height: 1.7;
     color: #727272
 }
 
-footer .site-info a{
+footer .site-info a {
     color: var(--color1)
 }
 
-footer .site-info a::before{
-    
+footer .site-info a::before {
+
     content: "\f138";
     display: inline-block;
     font-family: "fontawesome";
@@ -587,17 +603,19 @@ footer .site-info a::before{
     font-size: 18px
 }
 
-footer .helpful-links h2{
+footer .helpful-links h2 {
     font-size: 22px;
     color: var(--color1);
     text-align: center
 }
 
-footer .helpful-links ul li{line-height: 2.3}
+footer .helpful-links ul li {
+    line-height: 2.3
+}
 
-footer .helpful-links ul li::before{
-    
-      
+footer .helpful-links ul li::before {
+
+
     content: "\f054";
     display: inline-block;
     font-family: "fontawesome";
@@ -609,52 +627,95 @@ footer .helpful-links ul li::before{
     top: -2px
 }
 
-footer .contect h2{
+footer .contect h2 {
     font-size: 22px;
     color: var(--color1);
     text-align: center
 }
 
-footer .contect ul {margin: 0}
+footer .contect ul {
+    margin: 0
+}
 
-footer .contect ul li{margin-bottom: 10px}
+footer .contect ul li {
+    margin-bottom: 10px
+}
 
-.copyright{border-top: 1px solid #c0c0c0; padding-top: 30px}
+.copyright {
+    border-top: 1px solid #c0c0c0;
+    padding-top: 30px
+}
 
-.copyright ul li{
+.copyright ul li {
     display: inline-block;
     margin-left: 20px
 }
 
-.copyright ul li a{color: #777}
-/* End Footer */
-
-@media(max-width:576px){
-    
-    .upper-bar{flex-direction: column; align-items: center}
-    
-    .upper-bar > div:first-child{margin-bottom: 15px}
+.copyright ul li a {
+    color: #777
 }
 
-@media(max-width:768px){
+/* End Footer */
+
+@media(max-width:576px) {
+
+    .upper-bar {
+        flex-direction: column;
+        align-items: center
+    }
+
+    .upper-bar > div:first-child {
+        margin-bottom: 15px
+    }
+}
+
     
-    .slider .carousel-inner h1{
+
+@media(max-width:767px) {
+
+    .slider .carousel-inner h1 {
         font-size: 30px;
         max-width: 100%;
-        margin-left:auto;
+        margin-left: auto;
         text-align: center
     }
-    
-    .overview h2{font-size: 30px}
-    
-    p{font-size: 15px !important}
-    
-    .price .corporate{top: 0}
-    
-    .contact-us P {margin-bottom: 20px}
-    
-    .copyright ul{margin-top: 20px}
-    
-    .testimonials .carousel-caption p{font-size: 10px !important}
-    
+
+
+    .overview h2 {
+        font-size: 30px
+    }
+
+    p {
+        font-size: 15px !important
+    }
+
+    .price .corporate {
+        top: 0
+    }
+
+    .contact-us P {
+        margin-bottom: 20px
+    }
+
+    .copyright ul {
+        margin-top: 20px
+    }
+
+    .testimonials .carousel-caption p {
+        font-size: 10px !important
+    }
+
+}
+
+@media(max-width:992px){
+    .stats p {
+        position: relative;
+        top: -19px
+    }
+}
+
+@media(min-width:1200px){
+    .stats p {
+       font-size: 20px
+    }
 }
